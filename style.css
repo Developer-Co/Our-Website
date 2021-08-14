@@ -1,50 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+
 *{
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 8vh;
-    background-color: #000000;
-    font-family: 'Poppins', sans-serif;;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #171515ed;
+  font-family: 'Alfa Slab One', cursive;
 }
+
+
+nav h4{
+  font-family: 'Alfa Slab One', cursive;
+}
+
 .logo{
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+  width: 50%;
+  padding-left: 58px;
+}
 
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 5px 25px;
 }
-.nav-links{
-    display: flex;
-    justify-content: space-around;
-    width: 40%;   
-}
+
 .nav-links li{
-    list-style: none;
-}
-.nav-links a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-}
-.burger{
-    display: none;
-    cursor: pointer;
-}
-.burger div{
-    width: 25px;
-    height: 3px;
-    background-color: rgb(226, 226, 226);
-    margin: 5px;
-    transition: all 0.3s ease;
+  list-style: none;
 }
 
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: 'Cinzel', serif;
+  margin: 5px 15px;
+  display: block;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+nav ul li a:hover{
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* section css */
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* slider section css end */
+
+/* content secton css */
+
+.content-section {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border: 5px solid black;
+  margin: 35px 20px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+
+.heading {
+  text-align: center;
+  margin: 15px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  text-decoration: underline;
+  letter-spacing: 6px;
+}
+
+.last{
+  margin-bottom: 20px;
+}
+section ul li {
+  padding: 2px;
+}
+/* content section css end */
+
+
+
+
+
+/* footer css */
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 20px 20px;
+}
+
+/* footer css end */
+
+
+
+
+
+
+
+/* It  will be designed after */
 @media screen and (max-width:1024px){
     .nav-links{
         width: 60px;
