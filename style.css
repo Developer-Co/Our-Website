@@ -191,6 +191,7 @@ section ul li {
 /* footer css */
 
 .text-center {
+  font-family: sans-serif;
   bottom:0%;
   display: flex;
   justify-content: center;
