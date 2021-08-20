@@ -114,6 +114,10 @@ nav{
   transform: rotate(45deg) translate(-5px,-6px);
 }
 footer{
+ position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%; 
  background-color:black ;
  text-align: center;
  color: white;
