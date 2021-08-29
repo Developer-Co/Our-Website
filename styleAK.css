@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(4, 248, 187, 0.856);
+}
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
+.contact{
+    background: white;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    background: rgb(7, 241, 38);
+}
+.contact-right{
+    flex-basis: 60%;
+    padding: 40px;
+    background: rgb(14, 131, 3);
+}
+h1{
+    margin-bottom: 10px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 100%;
+    margin-top: 10px;
+}
+button{
+    width: 100px;
+    height: 35px;
+    border-radius:30px;
+    margin-top: 20px;
+}
+.contact-left h4{
+    color: rgb(37, 27, 185);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.contact-right h4{
+    color: rgb(16, 217, 243);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+td{
+    color: white;
+}
+tr td:first-child{
+    padding: 10px;
+}
